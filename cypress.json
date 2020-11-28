@@ -1,0 +1,8 @@
+{
+  "baseUrl": "http://jsonplaceholder.typicode.com",
+  "watchForFileChanges": true,
+  "requestTimeout": 10000,
+  "responseTimeout": 50000,
+  "screenshotOnRunFailure": false,
+  "video": false
+}
