@@ -1,6 +1,11 @@
 module.exports = (on, config) => {
-    // `on` is used to hook into various events Cypress emits
-    // `config` is the resolved Cypress config
+    const options = {
+        outputRoot: config.projectRoot + '/logs/',
+        outputTarget: {
+            'out.txt': 'txt',
+            'out.json': 'json',
+        }
+    };
 
-}
-
+    require('cypress-terminal-report/src/installLogsPrinter')(on, options);
+};
