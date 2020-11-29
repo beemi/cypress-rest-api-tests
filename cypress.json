@@ -4,5 +4,21 @@
   "requestTimeout": 10000,
   "responseTimeout": 50000,
   "screenshotOnRunFailure": false,
-  "video": false
+  "video": false,
+  "ignoreTestFiles": [
+    "**/__snapshots__/*",
+    "**/__image_snapshots__/*"
+  ],
+  "env": {
+    "cypress-plugin-snapshots": {
+      "autoCleanUp": false,
+      "autopassNewSnapshots": true,
+      "diffLines": 3,
+      "excludeFields": [],
+      "ignoreExtraArrayItems": false,
+      "ignoreExtraFields": false,
+      "normalizeJson": true,
+      "prettier": true
+    }
+  }
 }
